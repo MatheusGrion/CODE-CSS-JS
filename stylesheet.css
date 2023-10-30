@@ -1,0 +1,156 @@
+/* Estilos gerais da página */
+body {
+  font-family: Roboto,sans-serif;                            /* Escolha a fonte desejada */
+  text-align: center;
+  background: linear-gradient(to bottom, blue, red);
+  width: 98vw;
+  height: 200vh;
+  margin: 0;
+  padding: 0;
+}
+
+#search-container {
+  margin: 20px auto;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: blue;
+  border-radius: 25px;
+}
+
+.search-box {
+  width: 85%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 25px;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.cabecalho {
+  background-color: #92f61a;
+}
+/* background-color tabela */
+.tabela-com-fundo {
+  background-color: #292d33;
+}
+
+/* Estilos para as colunas */
+.setor, .modelo, .etiqueta, .obs {  
+  font-family: Roboto,sans-serif;  /* Escolha a fonte desejada */
+  color: white;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.ip {
+  color: red !important;
+  font-weight: bold;
+}
+
+/* Link Botão IP  */
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 330px;
+  right: 20px;
+  width: 60px;
+  height: 50px;
+  background-color: #000;
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: margin-top 250ms;
+}
+
+.btn:hover {
+  margin-top: -8px;
+}
+
+.button, .button:hover {
+  display: inline-block;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 16px;
+  padding: 5px;
+  width: 180px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button {
+  background-color: #92f61a;   /* Link Botão ANT */
+  color: #000;
+  font-weight: bold;
+  border: none;
+  transition: all 0.5s;
+}
+
+
+.button:hover {                    /* Link Botão IP DPS */
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+}
+
+.button span {                          
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* Link Botão IP END */
+
+/* CSS para a classe "titulo-impressoras" */
+
+.titulo-impressoras {
+    font-family: Consolas,monaco,monospace; /* Escolha a fonte desejada */
+    text-align: center; /* Alinhamento de texto ao centro */
+    color: white; /* Cor branca */
+    font-weight: bold; /* Texto em negrito */
+    font-size: 18px; /* Tamanho da fonte de 18 pixels */
+	/* transform: translateX(10px);  Move o texto horizontalmente 10 pixels para a direita */
+    transform: translateY(20px); /* Move o texto verticalmente 20 pixels para baixo, se desejado */
+
+}
