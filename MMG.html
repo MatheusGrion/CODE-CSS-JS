@@ -4,17 +4,18 @@
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
     <meta charset="utf-8">
     <!-- Criado Por Matheus Grion (21) 9 8459-5208 -->
-		<link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
-	<script src="@script.js"></script>
+		
+	<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/MatheusGrion/CODE-CSS-JS/main/stylesheet.css">
+	<script src="https://raw.githubusercontent.com/MatheusGrion/CODE-CSS-JS/main/script.js"></script>
 		
 	
     <!-- Filtro de Pesquisa--> 
     <script>
-        // Função para filtro de pesquisa
+        // FunÃ§Ã£o para filtro de pesquisa
         function filterTable() {
             var input, filter, table, tr, td, i, txtValue;
             input = document.getElementById('search');
-            filter = input.value.toLowerCase(); // Converter a pesquisa para minúsculas
+            filter = input.value.toLowerCase(); // Converter a pesquisa para minÃºsculas
             table = document.querySelector('table');
             tr = table.querySelectorAll('tbody tr');
             tr.forEach(function (row) {
@@ -22,7 +23,7 @@
                 row.style.display = 'none';
                 for (i = 0; i < td.length; i++) {
                     txtValue = td[i].textContent || td[i].innerText;
-                    txtValue = txtValue.toLowerCase(); // Converter o valor da tabela para minúsculas
+                    txtValue = txtValue.toLowerCase(); // Converter o valor da tabela para minÃºsculas
                     if (txtValue.indexOf(filter) > -1) {
                         row.style.display = 'table-row';
                         break;
@@ -37,7 +38,7 @@
 </head>
 <body>
     <h1 class="titulo-impressoras">LISTA DE IMPRESSORAS</h1>
-    <!-- Botão para rolar para o topo -->
+    <!-- BotÃ£o para rolar para o topo -->
     <a href="#" class="btn">Topo</a>
 
     <!-- Barra de Pesquisa -->
@@ -50,10 +51,10 @@
         <thead>
             <tr>
                 <th class="cabecalho">Setor</th>
-                <th class="cabecalho">Endereço de IP</th>
+                <th class="cabecalho">EndereÃ§o de IP</th>
                 <th class="cabecalho">Modelo</th>
                 <th class="cabecalho">Etiqueta</th>
-                <th class="cabecalho">Observação</th>
+                <th class="cabecalho">ObservaÃ§Ã£o</th>
             </tr>
         </thead>
         <tbody>
@@ -78,7 +79,7 @@
     <td class="setor">Setor 3</td>
     <td class="ip"><a href="http://192.168.1.102" target="_blank">
     <button class="button"><span>192.168.1.102</span></button></a></td>
-    <td class="modelo">Impressora Térmica</td>
+    <td class="modelo">Impressora TÃ©rmica</td>
     <td class="etiqueta">IMP_Local_Setor3</td>
     <td class="obs">Backup</td>
 </tr>
@@ -94,12 +95,12 @@
     <td class="setor">Setor 5</td>
     <td class="ip"><a href="http://192.168.1.104" target="_blank">
     <button class="button"><span>192.168.1.104</span></button></a></td>
-    <td class="modelo">Impressora Térmica</td>
+    <td class="modelo">Impressora TÃ©rmica</td>
     <td class="etiqueta">IMP_Local_Setor5</td>
     <td class="obs">Com defeito</td>
 </tr>
 <tr>
-    <td class="setor">Salão 1</td>
+    <td class="setor">SalÃ£o 1</td>
     <td class="ip"><a href="http://192.168.1.105" target="_blank">
     <button class="button"><span>192.168.1.105</span></button></a></td>
     <td class="modelo">Impressora Multifuncional</td>
@@ -107,7 +108,7 @@
     <td class="obs">Emprestada PDV 1</td>
 </tr>
 <tr>
-    <td class="setor">Salão 2</td>
+    <td class="setor">SalÃ£o 2</td>
     <td class="ip"><a href="http://192.168.1.106" target="_blank">
     <button class="button"><span>192.168.1.106</span></button></a></td>
     <td class="modelo">Impressora Multifuncional</td>
@@ -115,7 +116,7 @@
     <td class="obs">Boa</td>
 </tr>
 <tr>
-    <td class="setor">Salão 3</td>
+    <td class="setor">SalÃ£o 3</td>
     <td class="ip"><a href="http://192.168.1.107" target="_blank">
     <button class="button"><span>192.168.1.107</span></button></a></td>
     <td class="modelo">Impressora Laser Mono</td>
@@ -123,15 +124,15 @@
     <td class="obs">Ruim</td>
 </tr>
 <tr>
-    <td class="setor">Salão 4</td>
+    <td class="setor">SalÃ£o 4</td>
     <td class="ip"><a href="http://192.168.1.108" target="_blank">
     <button class="button"><span>192.168.1.108</span></button></a></td>
-    <td class="modelo">Impressora Térmica</td>
+    <td class="modelo">Impressora TÃ©rmica</td>
     <td class="etiqueta">IMP_Local_Setor9</td>
     <td class="obs">Backup</td>
 </tr>
 <tr>
-    <td class="setor">Salão 5</td>
+    <td class="setor">SalÃ£o 5</td>
     <td class="ip"><a href="http://192.168.1.109" target="_blank">
         <button class="button"><span>192.168.1.109</span></button></a></td>
     <td class="modelo">Impressora Laser Mono</td>
@@ -139,10 +140,10 @@
     <td class="obs">Agdd. Reparo</td>
 </tr>
 <tr>
-    <td class="setor">Salão 6</td>
+    <td class="setor">SalÃ£o 6</td>
     <td class="ip"><a href="http://192.168.1.110" target="_blank">
         <button class="button"><span>192.168.1.110</span></button></a></td>
-    <td class="modelo">Impressora Térmica</td>
+    <td class="modelo">Impressora TÃ©rmica</td>
     <td class="etiqueta">IMP_Local_Setor11</td>
     <td class="obs">Com defeito</td>
 </tr>
@@ -174,7 +175,7 @@
     <td class="setor">Restaurante 4</td>
     <td class="ip"><a href="http://192.168.1.114" target="_blank">
         <button class="button"><span>192.168.1.114</span></button></a></td>
-    <td class="modelo">Impressora Térmica</td>
+    <td class="modelo">Impressora TÃ©rmica</td>
     <td class="etiqueta">IMP_Local_Setor15</td>
     <td class="obs">Backup</td>
 </tr>
@@ -190,7 +191,7 @@
     <td class="setor">Restaurante 6</td>
     <td class="ip"><a href="http://192.168.1.116" target="_blank">
         <button class="button"><span>192.168.1.116</span></button></a></td>
-    <td class="modelo">Impressora Térmica</td>
+    <td class="modelo">Impressora TÃ©rmica</td>
     <td class="etiqueta">IMP_Local_Setor17</td>
     <td class="obs">Com defeito</td>
 </tr>
@@ -222,7 +223,7 @@
     <td class="setor">Padaria 4</td>
     <td class="ip"><a href="http://192.168.1.120" target="_blank">
         <button class="button"><span>192.168.1.120</span></button></a></td>
-    <td class="modelo">Impressora Térmica</td>
+    <td class="modelo">Impressora TÃ©rmica</td>
     <td class="etiqueta">IMP_Local_Setor21</td>
     <td class="obs">Backup</td>
 </tr>
